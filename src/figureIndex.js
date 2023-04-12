@@ -1,12 +1,24 @@
+const Convert26 = (num) => {
+    let columnIndex = "";
+
+    while (num > 0) {
+        const remainder = num % 26 ? num % 26 : 26;
+        columnIndex = String.fromCharCode(remainder + 64) + columnIndex;
+
+        num = (num - remainder) / 26;
+    }
+
+    return columnIndex;
+};
+
 const figureIndex = (startIndex, count) => {
-  const originColumns = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  const result = [];
+    let result = [];
 
-  for (let i = startIndex; i < startIndex + count; i += 1) {
-    result.push(originColumns[i - 1]);
-  }
+    for (let i = startIndex; i < startIndex + count; i += 1) {
+        result.push(Convert26(i));
+    }
 
-  return result;
+    return result;
 };
 
 module.exports = figureIndex;
