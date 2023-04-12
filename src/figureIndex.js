@@ -12,7 +12,7 @@ const Convert26 = (num) => {
 };
 
 const figureIndex = (startIndex, count) => {
-    if (startIndex < 1) {
+    if (startIndex < 1 || startIndex + count > 18278) {
         throw new Error('Invalid range');
     }
 
