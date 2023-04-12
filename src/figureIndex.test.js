@@ -8,3 +8,12 @@ test('should return array in 1-26 range', () => {
     // Assert
     expect(figureResult).toEqual(['A', 'B']);
 });
+
+test('should throw error if startIndex is less than 1', () => {
+    // Arrange
+    const figureResult = () => figureIndex(0, 2);
+    // Act
+
+    // Assert
+    expect(figureResult).toThrow('Invalid range');
+});
