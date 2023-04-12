@@ -1,3 +1,3 @@
-const figureIndex = 'Hello from figureIndex.js';
+const figureIndex = 'figureIndex.js loaded';
 
 module.exports = figureIndex;

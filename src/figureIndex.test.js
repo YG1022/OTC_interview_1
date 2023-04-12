@@ -1,5 +1,5 @@
 const figureIndex = require('./figureIndex.js');
 
-test('figureIndex.js loaded', () => {
+test('should load figureIndex.js', () => {
   expect(figureIndex).toBe('figureIndex.js loaded');
 });
