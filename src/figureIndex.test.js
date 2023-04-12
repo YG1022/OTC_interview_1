@@ -17,3 +17,12 @@ test('should throw error if startIndex is less than 1', () => {
     // Assert
     expect(figureResult).toThrow('Invalid range');
 });
+
+test('should throw error if startIndex + count is greater than 18278', () => {
+    // Arrange
+    const figureResult = () => figureIndex(18279, 2);
+    // Act
+
+    // Assert
+    expect(figureResult).toThrow('Invalid range');
+});
