@@ -1,1 +1,3 @@
-console.log('figureIndex.js loaded');
+const figureIndex = 'Hello from figureIndex.js';
+
+module.exports = figureIndex;
