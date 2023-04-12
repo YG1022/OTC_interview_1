@@ -1,5 +1,12 @@
 {
   "devDependencies": {
     "jest": "^29.5.0"
+  },
+  "scripts": {
+    "install": "npm install",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   }
 }
