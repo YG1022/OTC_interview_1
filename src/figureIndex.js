@@ -1,0 +1,1 @@
+console.log('figureIndex.js loaded');
