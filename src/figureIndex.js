@@ -12,6 +12,10 @@ const Convert26 = (num) => {
 };
 
 const figureIndex = (startIndex, count) => {
+    if (startIndex < 1) {
+        throw new Error('Invalid range');
+    }
+
     let result = [];
 
     for (let i = startIndex; i < startIndex + count; i += 1) {
