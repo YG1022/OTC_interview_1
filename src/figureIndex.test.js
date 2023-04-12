@@ -6,5 +6,5 @@ test('should return array in 1-26 range', () => {
   // Act
 
   // Assert
-  expect(figureResult).toBe(['A', 'B']);
+  expect(figureResult).toEqual(['A', 'B']);
 });
